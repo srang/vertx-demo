@@ -11,7 +11,7 @@ public class PongVerticle extends AbstractVerticle {
         vertx.setPeriodic(1000, id -> {
             WebClient client = WebClient.create(vertx);
             client
-                    .get(8080, "ping-service", "/ping")
+                    .get(8080, "vertx-ping", "/ping")
                     .send(ar -> {
                         if (ar.succeeded()) {
                             // Obtain response
