@@ -4,11 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>vertx-demo-pong</artifactId>
-    <parent>
-        <artifactId>vertx-demo</artifactId>
-        <groupId>com.rht.ord.trail</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+    <groupId>com.rht.ord.trail</groupId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>Vert.X Demo Pong</name>
 
@@ -75,12 +72,14 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
                                         <Main-Class>${exec.mainClass}</Main-Class>
                                     </manifestEntries>
                                 </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>META-INF/services/io.vertx.core.spi.VerticleFactory</resource>
                                 </transformer>
                             </transformers>
