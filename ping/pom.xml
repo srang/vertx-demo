@@ -12,7 +12,7 @@
     <name>Vert.X Demo</name>
 
     <properties>
-        <exec.mainClass>com.rht.ord.trail.ViewVerticle</exec.mainClass>
+        <exec.mainClass>com.rht.ord.trail.Application</exec.mainClass>
     </properties>
 
     <build>
