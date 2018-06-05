@@ -55,7 +55,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>HACKWAR_PING</finalName>
+        <finalName>ping</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
